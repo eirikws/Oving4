@@ -13,7 +13,7 @@ func SendMsgTo(ipAdr string, port string,message Message){
                 
         Bmessage:=msgToByte(message)
         for i:=0;i<5;i++{
-                con.Write(Bmessage)
+                con.Write([]byte(Bmessage+"\x00"))
         }
 }
 func ListenerCon(ipAdr string, port string){

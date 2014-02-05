@@ -15,6 +15,6 @@ func GetMyIP() string{
 }
 
 func GetBIP(MyIP string) string{
-    IP:=strings.Split(MyIP,".")
+    IP=strings.Split(MyIP,".")
     return IP[0]+"."+IP[1]+"."+IP[2]+".255"
 }

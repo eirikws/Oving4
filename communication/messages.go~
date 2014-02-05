@@ -13,7 +13,7 @@ func msgToByte(p Message) []byte{
 }
 
 func byteToMsg(p []byte) Message{
-    msg:=strings.Split(string(p[:]),"£")
+    msg=strings.Split(string(p[:]),"£")
     return Message{msg[0],msg[1],msg[2]}
 }
 
